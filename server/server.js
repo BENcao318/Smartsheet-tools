@@ -1,4 +1,5 @@
 const express = require('express')
+require('dotenv').config()
 const app = express(),
   bodyParser = require('body-parser')
 port = 3080
@@ -31,7 +32,7 @@ app.listen(port, () => {
 // Initialize the client
 var client = require('smartsheet')
 var smartsheet = client.createClient({
-  accessToken: 'JKlMNOpQ12RStUVwxYZAbcde3F5g6hijklM789',
+  accessToken: process.env.SMARTSHEET_API_BEARER_TOKEN,
   logLevel: 'info',
 })
 
