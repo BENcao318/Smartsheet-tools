@@ -31,8 +31,9 @@ app.listen(port, () => {
 
 // Initialize the client
 var client = require('smartsheet')
+const smartsheetAccessToken = process.env.SMARTSHEET_API_BEARER_TOKEN
 var smartsheet = client.createClient({
-  accessToken: process.env.SMARTSHEET_API_BEARER_TOKEN,
+  accessToken: smartsheetAccessToken,
   logLevel: 'info',
 })
 
