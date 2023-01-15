@@ -56,7 +56,7 @@ smartsheet.sheets
     // Load one sheet
     smartsheet.sheets
       .getSheet({ id: sheetId })
-      .then(function (sheetInfo) {
+      .then((sheetInfo) => {
         console.log(sheetInfo)
       })
       .catch(function (error) {
