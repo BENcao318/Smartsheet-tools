@@ -51,7 +51,7 @@ var options = {
 smartsheet.sheets
   .listSheets(options)
   .then(function (result) {
-    var sheetId = result.data[0].id // Choose the first sheet
+    var sheetId = result.data[1].id // Choose the first sheet
 
     // Load one sheet
     smartsheet.sheets
