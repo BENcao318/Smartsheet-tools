@@ -37,7 +37,7 @@ var smartsheet = client.createClient({
   logLevel: 'info',
 })
 
-// The `smartsheet` variable now contains access to all of the APIs
+// The `smartsheet` variable is now containing access to all of the APIs
 
 // Set queryParameters for `include` and pagination
 var options = {
@@ -60,7 +60,7 @@ smartsheet.sheets
         console.log(sheetInfo)
       })
       .catch(function (error) {
-        console.log(error)
+        console.log('error:', error)
       })
   })
   .catch(function (error) {
