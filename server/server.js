@@ -60,7 +60,7 @@ smartsheet.sheets
         console.log(sheetInfo)
       })
       .catch(function (error) {
-        console.log(error)
+        console.log('error:', error)
       })
   })
   .catch(function (error) {
