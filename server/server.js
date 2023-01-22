@@ -53,7 +53,7 @@ smartsheet.sheets
   .then(function (result) {
     var sheetId = result.data[1].id // Choose the first sheet
 
-    // Load one sheet
+    // Load the sheets
     smartsheet.sheets
       .getSheet({ id: sheetId })
       .then((sheetInfo) => {
