@@ -16,7 +16,7 @@ app.get('/api/users', (req, res) => {
 
 app.post('/api/user', (req, res) => {
   const user = req.body.user
-  console.log('Adding user::::::::', user)
+  console.log('Adding user:::', user)
   users.push(user)
   res.json('user addedd')
 })
