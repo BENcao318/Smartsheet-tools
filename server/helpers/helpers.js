@@ -22,7 +22,7 @@ app.post('/api/user', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('App Works !!!!')
+  res.send('App Works !!!!!!')
 })
 
 app.listen(port, () => {
